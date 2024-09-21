@@ -1,0 +1,72 @@
+.contact-section {
+  background: linear-gradient(135deg, rgba(220, 220, 220, 0.8), rgba(245, 245, 245, 0.9)); // Light grey gradient background
+  padding: 50px 0; // Padding for the section
+  border-radius: 15px; // Rounded corners for the section
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // Soft shadow for depth
+
+  .contact-card {
+    background: #1817174b; // White background for the card
+    border: none; // No border
+    border-radius: 10px; // Rounded corners for the card
+    overflow: hidden; // To ensure inner elements are rounded
+
+    .card-title {
+      font-size: 2rem; // Larger title font size
+      margin-bottom: 20px; // Space below the title
+      color: #030303; // Dark title color
+    }
+
+    .contact-form {
+      .form-label {
+        font-weight: bold; // Bold labels for emphasis
+      }
+
+      .form-control {
+        border-radius: 5px; // Rounded input fields
+        border: 1px solid #ccc; // Light border
+
+        &:focus {
+          border-color: #5c6a74; // Change border color on focus
+          box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); // Focus shadow
+        }
+      }
+
+      .btn {
+        background-color: #49494e;
+        border-color: rgb(53, 51, 51);
+        width: 100%; // Full-width button
+        padding: 10px;
+        font-weight: bold; // Bold button text
+        border-radius: 5px; // Rounded button
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #373b3d; // Darker blue on hover
+        }
+      }
+    }
+
+    .contact-options {
+      display: flex;
+      justify-content: space-around; // Space out the links
+      margin-top: 20px;
+
+      .contact-link {
+        color: #333; // Dark text color
+        text-decoration: none; // Remove underline
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center icons and text
+        transition: color 0.3s; // Smooth color transition
+
+        &:hover {
+          color: #007bff; // Change color on hover
+        }
+
+        i {
+          margin-bottom: 5px; // Space between icon and text
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<section id="projects" class="col-10 col-md-8 col-xl-8 mx-auto">
+  <h1 class="fw-bold text-center mb-5">My Projects</h1>
+
+  <div class="row">
+    <div *ngFor="let project of projects" class="col-md-4 mb-4">
+      <app-project-item [project]="project" (projectClick)="openModal(project)"></app-project-item>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">{{ selectedProject?.name }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img [src]="selectedProject?.src" class="img-fluid" alt="{{ selectedProject?.name }}">
+          <p class="mt-3">{{ selectedProject?.description }}</p>
+          <ul class="technologies-list">
+            <li *ngFor="let tech of selectedProject?.technologies">{{ tech }}</li>
+          </ul>
+          <a [href]="selectedProject?.link" target="_blank" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

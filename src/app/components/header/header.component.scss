@@ -1,0 +1,79 @@
+.header-container {
+  height: 30vh; // Height for a prominent header
+  max-width: 1800px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); // Dark gradient background
+  color: #333333; // Dark text for contrast
+  display: flex;
+  align-items: center; // Center content vertically
+  justify-content: center; // Center content horizontally
+  padding: 20px 0; // Padding for spacing
+
+   // Subtle text shadow for better visibility
+   h1, .navbar-brand, .nav-link {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); // Add subtle shadow
+  }
+
+  .navbar {
+    width: 100%; // Full-width navbar
+    background: rgba(255, 255, 255, 0.9); // Slightly less transparent for clarity
+    padding: 15px 30px; // Padding for navbar
+    border-radius: 15px; // Rounded corners
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Slightly darker shadow for depth
+    z-index: 10; // Keep navbar above other elements
+
+    .navbar-brand {
+      font-size: 2.5rem; // Bold brand size
+      font-weight: 900; // Strong emphasis
+      text-transform: uppercase; // Capitalized brand text
+      letter-spacing: 2px; // Spacing for readability
+      color: #3f3f3f; // Darker grey for brand color
+      transition: color 0.3s;
+      font-family: 'Courier New', Courier, monospace; // Change font style
+
+      &:hover {
+        color: #7a7777; // Darker grey on hover
+      }
+    }
+
+    .navbar-toggler {
+      border: none; // Clean look
+      background: transparent; // Transparent background
+      color: #333333; // Toggler icon color
+
+      &:focus {
+        outline: none; // Remove outline on focus
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: #1d1c1c; // Link color
+        margin: 0 20px; // Space between links
+        font-size: 1.2rem; // Comfortable font size
+        font-weight: bold; // Bold text
+        text-transform: uppercase; // Capitalize links
+        transition: color 0.3s, transform 0.3s; // Smooth transition
+        font-family: 'Arial', sans-serif; // Stylish sans-serif font
+
+        &:hover {
+          color: #555555; // Darker grey on hover
+          transform: translateY(-3px); // Lift effect
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    height: 40vh; // More height for mobile
+
+    .navbar {
+      .navbar-brand {
+        font-size: 2rem; // Adjust brand size for smaller screens
+      }
+
+      .nav-link {
+        font-size: 1.1rem; // Adjust link size for smaller screens
+      }
+    }
+  }
+}

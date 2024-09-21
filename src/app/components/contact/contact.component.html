@@ -1,0 +1,33 @@
+<section id="contact" class="mx-auto contact-section">
+  <h1 class="fw-bold text-center mb-5">Let's Connect</h1>
+  <div class="row">
+    <div class="col-10 col-md-8 col-xl-6 mx-auto">
+      <div class="card contact-card shadow-lg rounded-4">
+        <div class="card-body text-center">
+          <h2 class="card-title">Get in Touch</h2>
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="userEmail" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="userMessage" class="form-label">Your Message</label>
+              <textarea class="form-control" id="userMessage" rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div class="contact-options mt-4">
+            <a href="{{ 'mailto:' + email }}" class="contact-link">
+              <i class="fa fa-envelope fa-2x"></i>
+              <span>Email</span>
+            </a>
+            <a (click)="goToLinkedin()" class="contact-link">
+              <i class="fab fa-linkedin fa-2x"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

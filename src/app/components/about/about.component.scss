@@ -1,0 +1,18 @@
+.about-description {
+  color: rgb(85, 85, 85); // Dark gray for readability
+  font-weight: 400; // Regular weight for body text
+  font-size: 1.2rem; // Adjusted font size for better readability
+  line-height: 1.6; // Increased line height for spacing
+  margin: 1rem 0; // Margin for spacing between paragraphs
+}
+
+#about {
+  background-color: #f1ececad; // Light background for contrast
+  padding: 20px; // Padding around the section
+  border-radius: 10px; // Rounded corners
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+  h1 {
+    color: #2c3e50; // Darker color for the heading
+  }
+}

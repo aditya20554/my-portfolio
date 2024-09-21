@@ -1,0 +1,29 @@
+.project-card {
+  cursor: pointer;
+  padding: 2rem;
+  background-color: #5f616391;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.technologies-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+
+  li {
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #b0b6bd;
+  }
+}

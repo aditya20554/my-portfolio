@@ -1,0 +1,29 @@
+.footer {
+    background: linear-gradient(135deg, #b6b8c7, #8d8df5); // Gradient background
+    color: rgba(185, 198, 201, 0.349); // White text for contrast
+    padding: 20px 0;
+  
+    .background-block {
+      background-color: rgba(159, 160, 168, 0.788); // Semi-transparent background
+      border-radius: 10px; // Rounded corners
+      padding: 20px; // Spacing inside the block
+      margin-bottom: 20px; // Space between the block and copyright text
+    }
+  
+    .footer-title {
+      margin-bottom: 10px; // Space below title
+      font-weight: 800;
+      font-size: 1.5rem; // Larger font for title
+    }
+  
+    .no-links {
+      font-size: 1rem; // Text size for email prompt
+      margin: 0; // Remove margin for better alignment
+    }
+  
+    .tagline {
+      font-style: bold;
+      margin-top: 10px; // Space between the copyright and tagline
+    }
+  }
+  

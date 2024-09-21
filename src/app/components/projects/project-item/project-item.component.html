@@ -1,0 +1,16 @@
+<div class="card text-center" (click)="projectClick.emit()">
+  <img [src]="project.src" class="card-img-top" [alt]="project.name">
+  <div class="card-body">
+    <h5 class="card-title mt-3">{{ project.name }}</h5>
+    <p class="card-text">{{ project.description }}</p>
+    <div>
+      <!-- <span class="fw-bold">Technologies used:</span> -->
+      <ul class="technologies-list">
+        <li *ngFor="let technology of project.technologies">{{ technology }}</li>
+      </ul>
+    </div>
+    <div>
+      <a [href]="project.link" target="_blank" class="bt btn btn-color-3">Github</a>
+    </div>
+  </div>
+</div>
